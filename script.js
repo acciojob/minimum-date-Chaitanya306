@@ -1,8 +1,8 @@
 function minDate(dates) {
   //write you code here
-	const dates=[]
-	for(let date of dates){  dates.push(date) }
-	dates.sort((d1,d2)=> d1-d2)
+	const datesArray=[]
+	for(let date of dates){  datesArray.push(new Date(date)) }
+	datesArray.sort((d1,d2)=> d1-d2)
 	let ans=datesArray[0]
 	let year=ans.getFullYear()
 	let month=ans.getMonth()
